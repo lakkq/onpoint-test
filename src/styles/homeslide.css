@@ -1,0 +1,128 @@
+.homepage__title {
+  line-height: 115px;
+}
+.homepage__hello {
+  display: block;
+  margin: 0 0 18px;
+}
+.homepage__button {
+  display: inline-block;
+  transform: translate(0, -26px);
+}
+
+#pink-sperm-1 {
+  width: 600px;
+  top: 153px;
+  left: 438px;
+  z-index: 10;
+}
+
+#pink-sperm-2 {
+  filter: blur(5px);
+  left: -160px;
+  bottom: 30px;
+  width: 450px;
+  transform: rotate(165deg);
+  z-index: -10;
+}
+
+#microbe-1 {
+  width: 170px;
+  top: 70px;
+  left: -40px;
+  z-index: -10;
+}
+
+#cocci-2 {
+  width: 225px;
+  bottom: -95px;
+  left: 540px;
+  z-index: -10;
+  animation: cocci-2 infinite 4s alternate linear;
+}
+
+#cocci-3 {
+  width: 110px;
+  right: 70px;
+  top: 195px;
+  z-index: 11;
+  animation: cocci-3 infinite 4s linear alternate;
+}
+
+#cocci-4 {
+  width: 70px;
+  left: 25px;
+  bottom: 200px;
+  z-index: -10;
+  animation: cocci-4 infinite 8s linear alternate;
+}
+
+#cocci-5 {
+  width: 62px;
+  right: 230px;
+  top: 60px;
+  z-index: -10;
+  transform: rotate(170deg);
+  animation: cocci-5 infinite 6s linear alternate;
+}
+
+#cocci-6 {
+  width: 40px;
+  left: 370px;
+  bottom: 75px;
+  z-index: -10;
+  filter: blur(10px) brightness(70%);
+}
+
+#cocci-7 {
+  width: 30px;
+  right: 70px;
+  top: 50px;
+  z-index: -10;
+  filter: blur(13px) brightness(90%);
+}
+
+@keyframes cocci-2 {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1) translate(-30px, -30px);
+  }
+}
+@keyframes cocci-3 {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: translate(-30px, -30px) rotate(20deg);
+  }
+  66% {
+    transform: translate(0px, -40px) rotate(40deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(60deg);
+  }
+}
+@keyframes cocci-4 {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: translate(10px, -10px);
+  }
+  66% {
+    transform: translate(20px, 50px);
+  }
+}
+@keyframes cocci-5 {
+  0% {
+    transform: rotate(170deg);
+  }
+  100% {
+    transform: translate(60px, 40px) rotate(170deg);
+  }
+}

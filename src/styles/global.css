@@ -1,0 +1,134 @@
+body {
+  width: 1024px;
+  height: 768px;
+  background-color: #edf2f4;
+  margin: 0 auto;
+}
+
+.nav,
+.logo {
+  position: absolute;
+  left: 68px;
+}
+
+.nav {
+  top: 26px;
+  z-index: 1;
+}
+.nav__row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav__button {
+  background-color: inherit;
+  position: relative;
+}
+.nav__button img {
+  width: 24px;
+}
+.nav__button::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgb(39, 39, 39);
+}
+.nav__text {
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-family: "Circe";
+  color: rgb(39, 39, 39);
+  text-transform: uppercase;
+}
+
+.logo {
+  bottom: 10px;
+  width: 55px;
+}
+
+.slider {
+  width: 300%;
+  height: 768px;
+  background: url("../imgs/bg.png");
+  background-size: cover;
+  display: flex;
+  transition-duration: 500ms;
+}
+
+.window {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  flex: 1 0 0;
+  height: 100%;
+  padding: 170px 45px 82.5px 70px;
+  position: relative;
+}
+
+.mid-title {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-family: "DINPro";
+  color: rgb(36, 36, 36);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 109px;
+  font-family: "Gilroy";
+  font-weight: light;
+  color: rgb(23, 23, 23);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #ff6a9f;
+}
+.button__row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 15px;
+}
+.button__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__icon img {
+  width: 25px;
+}
+.button__icon-border {
+  background: linear-gradient(135deg, rgba(178, 79, 120, 0.5176470588) 0%, rgba(255, 162, 195, 0.6156862745) 80%);
+  border-radius: 50%;
+  padding: 5px;
+}
+.button__text {
+  margin: 0 40px 0 20px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-family: "DINPro";
+  color: rgb(23, 23, 23);
+}
+
+.decorations {
+  position: absolute;
+}

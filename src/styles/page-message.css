@@ -1,0 +1,156 @@
+.page-message {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page-message__title {
+  line-height: 30px;
+  margin: 0 0 15px 0;
+}
+.page-message__content {
+  position: relative;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.page-message__message {
+  flex: 0 1 0;
+  position: relative;
+  margin: 0 70px 0 50px;
+  padding: 20px 35px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  max-height: 100%;
+  overflow: scroll;
+  font-size: 23px;
+  line-height: 30px;
+  font-family: "DINPro";
+  color: rgb(23, 23, 23);
+  font-weight: normal;
+}
+.page-message__message p {
+  margin: 0 0 40px 0;
+}
+.page-message__message .strong {
+  font-weight: bold;
+}
+.page-message__message-overlay {
+  margin: 0 70px 0 50px;
+  position: absolute;
+  width: 780px;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 40px 40px;
+  background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, #ffffff 100%);
+}
+.page-message__decor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+#scrollbar-container {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  top: 5px;
+  width: 20px;
+}
+#scrollbar-container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 5px;
+  height: 100%;
+  left: 6px;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+#scrollbar {
+  position: absolute;
+  right: 0;
+  height: 100px;
+  width: 22px;
+  border-radius: 100px;
+  background: url("../imgs/scroll-btn.png");
+  background-size: cover;
+  z-index: 2;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.decor-slide2 {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translate(85px, 60px);
+}
+
+#pink-sperm-4 {
+  width: 1000px;
+  top: 100px;
+  right: -340px;
+  animation-name: pink-sperm-2;
+}
+
+#pink-sperm-5 {
+  width: 650px;
+  top: 100px;
+  left: 570px;
+  animation-name: pink-sperm-2-2;
+  animation-delay: 400ms;
+}
+
+#pink-sperm-6 {
+  width: 400px;
+  top: 75px;
+  left: 690px;
+  animation-name: pink-sperm-2-2;
+  animation-delay: 600ms;
+}
+
+#pink-sperm-7 {
+  width: 650px;
+  top: 430px;
+  right: -520px;
+  animation-name: pink-sperm-2-2;
+  animation-delay: 400ms;
+}
+
+#pink-sperm-8 {
+  width: 300px;
+  top: 530px;
+  right: -180px;
+  animation-name: pink-sperm-2-2;
+  filter: blur(1.5px);
+  animation-delay: 600ms;
+}
+
+@keyframes pink-sperm-2 {
+  0% {
+    opacity: 0;
+    transform: translate(85px, 60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes pink-sperm-2-2 {
+  0% {
+    opacity: 0;
+    transform: translate(85px, 60px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(0, 0);
+  }
+}
